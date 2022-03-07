@@ -25,7 +25,7 @@
     <section class="hero">
       <div class="hero-info">
         <div class="container">
-          <div class="pattern-wrapper">
+          <div class="hero-pattern__wrapper">
             <svg class="hero-pattern" width="289" height="39" xmlns="http://www.w3.org/2000/svg"><path d="M1 37.676c92.173-48 187.84-48 287 0" stroke="#172339" stroke-width="2" fill="none"/></svg>
           </div>
           <h1 class="heading-xl hero-heading">A <span>super solution</span>  for your <span>business.</span></h1>
@@ -69,7 +69,7 @@
               /assets/image-hero-portrait@2x.png 2x,
             "
           />
-          <img src="assets/image-hero-portrait.png" alt="">
+          <img src="assets/image-hero-portrait.png" alt="Phone screen show what's inside the app">
         </picture>
       </div>
 
@@ -89,21 +89,66 @@
       </div>
     </section>
 
-    <section class="feedback">
-      <div class="feedback-img"></div>
-      <div class="feedback-content">
-        <h2>It just <strong>works.</strong></h2>
-        <blockquote>
-          “I really like how it is an all-in-one solution that handle many of
-          the tasks that you would normally need separate tools to do the same
-          job. This thing is a miracle worker.”
-        </blockquote>
-      </div>
-      <div class="feedback-person__info">
-        <h3 class="heading-m">Jeremy Robinson</strong>
-        <h4 class="heading-s">CMO, Fylo</h4>
-      </div>
-    </section>
+    <div class="feedback-wrapper">
+      <section class="feedback">
+        <div class="feedback-img__container">
+          <div class="feedback-pattern__wrapper--blur">
+            <svg width="538" height="538" xmlns="http://www.w3.org/2000/svg"><defs><filter x="-51%" y="-51%" width="202%" height="202%" filterUnits="objectBoundingBox" id="a"><feGaussianBlur stdDeviation="50" in="SourceGraphic"/></filter></defs><circle filter="url(#a)" cx="289" cy="412" r="147" transform="translate(-20 -143)" fill="#DB65E2" fill-rule="evenodd" opacity=".476"/></svg>
+          </div>
+          <picture class="feedback-img">
+            <source
+              type="image/webp"
+              media="(max-width: 550px)"
+              srcset="
+                /assets/image-jeremy-small.webp 1x,
+                /assets/image-jeremy-small@2x.webp 2x,
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 550px)"
+              srcset="
+                /assets/image-jeremy-large.webp 1x,
+                /assets/image-jeremy-large@2x.webp 2x,
+              "
+            />
+            <source
+              type="image/png"
+              media="(max-width: 550px)"
+              srcset="
+                /assets/image-jeremy-small.png 1x,
+                /assets/image-jeremy-small@2x.png 2x,
+              "
+            />
+            <source
+              type="image/png"
+              media="(min-width: 550px)"
+              srcset="
+                /assets/image-jeremy-large.png 1x,
+                /assets/image-jeremy-large@2x.png 2x,
+              "
+            />
+            <img src="assets/image-jeremy-large.png" alt="A man using his phone">
+          </picture>
+        </div>
+        
+        <div class="feedback-pattern__wrapper--curve">
+          <svg width="66" height="54" xmlns="http://www.w3.org/2000/svg"><path d="M64.25.153C59.995 27.67 38.646 45.003.2 52.153" stroke="#FAF8F6" stroke-width="2" fill="none"/></svg>
+        </div>
+        <div class="feedback-content">
+          <h2 class="heading-l">It just <span>works.</span></h2>
+          <blockquote>
+            “I really like how it is an all-in-one solution that handle many of
+            the tasks that you would normally need separate tools to do the same
+            job. This thing is a miracle worker.”
+          </blockquote>
+          <div class="feedback-person__info">
+            <h3 class="heading-m">Jeremy Robinson</strong>
+            <h4 class="heading-s">CMO, Fylo</h4>
+          </div>
+        </div>        
+      </section>
+    </div>
 
     <div class="footer-wrapper">
       <footer class="footer">
