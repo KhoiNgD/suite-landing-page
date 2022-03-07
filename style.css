@@ -353,4 +353,74 @@ footer {
 
 /* Mobile */
 @media (max-width: 550px) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .btn {
+    padding: 12px 16px;
+  }
+
+  header,
+  section,
+  .footer-wrapper {
+    max-width: revert;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* HEADER SECTION */
+  .hero {
+    gap: 56px;
+  }
+
+  .hero-info .container {
+    position: revert;
+  }
+
+  .hero-info {
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .hero-heading,
+  .hero-description {
+    max-width: revert;
+    margin-bottom: 32px;
+  }
+
+  .hero-heading {
+    line-height: 44px;
+  }
+
+  .hero-image {
+    margin: revert;
+  }
+
+  .hero-metrics {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* FEEDBACK SECTION */
+  .feedback-wrapper {
+    margin-top: 240px;
+    padding: revert;
+  }
+
+  .feedback-content {
+    min-width: revert;
+  }
+
+  /* FOOTER SECTION */
+  .footer-wrapper {
+    padding-top: 56px;
+    padding-bottom: 80px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
 }
