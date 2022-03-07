@@ -25,7 +25,6 @@ html {
 }
 
 body {
-  --max-width: 1110px;
   font-family: "Epilogue", sans-serif;
   line-height: 32px;
   font-size: 1.8rem;
@@ -36,7 +35,7 @@ body {
 header,
 section,
 footer {
-  max-width: var(--max-width);
+  max-width: 1110px;
   margin: auto;
 }
 
@@ -112,7 +111,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-bottom: 16px;
 }
 
@@ -264,6 +264,51 @@ footer {
 /* MEDIA QUERIES */
 /* Tablet */
 @media (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+
+  header,
+  section,
+  footer {
+    max-width: revert;
+    min-width: 670px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* HEADER SECTION */
+  .hero {
+    flex-direction: column;
+    gap: 88px;
+  }
+
+  .hero-pattern__wrapper {
+    transform: scale(0.8);
+  }
+
+  .hero-info {
+    width: 100%;
+  }
+
+  .hero-heading {
+    max-width: 550px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-metrics {
+    flex-direction: revert;
+    justify-content: space-around;
+  }
+
+  .metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Mobile */
