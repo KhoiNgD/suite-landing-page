@@ -70,8 +70,10 @@ footer {
 
 .heading-s {
   font-size: 1.6rem;
+  font-weight: 400;
   line-height: 26px;
-  letter-spacing: -2.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -79,12 +81,13 @@ footer {
   outline: none;
   border-radius: 6px;
   cursor: pointer;
+  border: none;
 }
 
 .btn-primary,
 .btn-secondary:hover {
   color: var(--cream-white);
-  border: 1px solid var(--dark-blue);
+  /* border: 1px solid var(--dark-blue); */
   background: var(--dark-blue);
 }
 
@@ -111,6 +114,67 @@ footer {
   align-items: center;
   padding: 50px 0;
   margin-bottom: 16px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+
+.hero-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-info .container {
+  position: absolute;
+}
+
+.pattern-wrapper {
+  position: absolute;
+  right: 60px;
+  top: -50px;
+}
+
+.hero-pattern {
+  display: block;
+  max-width: 100%;
+}
+
+.hero-image {
+  margin-left: auto;
+  line-height: 0;
+  z-index: -1;
+}
+
+.hero-metrics {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.metric .heading-s {
+  color: var(--grey);
+}
+
+.hero-heading {
+  max-width: 635px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.hero-heading span {
+  font-weight: 700;
+}
+
+.hero-description {
+  max-width: 350px;
+  margin-bottom: 52px;
 }
 
 /* MEDIA QUERIES */

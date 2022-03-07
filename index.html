@@ -24,49 +24,54 @@
 
     <section class="hero">
       <div class="hero-info">
-        <h1 class="heading-xl">A super solution for your business.</h1>
-        <p class="hero-description">
-          Our marketing and sales automations help you scale your outreach to
-          get more leads for your company.
-        </p>
-        <button class="btn btn-primary">Request Beta Access</button>
+        <div class="container">
+          <div class="pattern-wrapper">
+            <svg class="hero-pattern" width="289" height="39" xmlns="http://www.w3.org/2000/svg"><path d="M1 37.676c92.173-48 187.84-48 287 0" stroke="#172339" stroke-width="2" fill="none"/></svg>
+          </div>
+          <h1 class="heading-xl hero-heading">A <span>super solution</span>  for your <span>business.</span></h1>
+          <p class="hero-description">
+            Our marketing and sales automations help you scale your outreach to
+            get more leads for your company.
+          </p>
+          <button class="btn btn-primary">Request Beta Access</button>
+        </div>
+        
+        <picture class="hero-image">
+          <source
+            type="image/webp"
+            media="(max-width: 550px)"
+            srcset="
+              /assets/image-hero-landscape.webp 1x,
+              /assets/image-hero-landscape@2x.webp 2x,
+            "
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 550px)"
+            srcset="
+              /assets/image-hero-portrait.webp 1x,
+              /assets/image-hero-portrait@2x.webp 2x,
+            "
+          />
+          <source
+            type="image/png"
+            media="(max-width: 550px)"
+            srcset="
+              /assets/image-hero-landscape.png 1x,
+              /assets/image-hero-landscape@2x.png 2x,
+            "
+          />
+          <source
+            type="image/png"
+            media="(min-width: 550px)"
+            srcset="
+              /assets/image-hero-portrait.png 1x,
+              /assets/image-hero-portrait@2x.png 2x,
+            "
+          />
+          <img src="assets/image-hero-portrait.png" alt="">
+        </picture>
       </div>
-
-      <picture>
-        <source
-          type="image/webp"
-          media="(orientation: landscape)"
-          srcset="
-            /assets/image-hero-landscape.webp 1x,
-            /assets/image-hero-landscape@2x.webp 2x,
-          "
-        />
-        <source
-          type="image/webp"
-          media="(orientation: portrait)"
-          srcset="
-            /assets/image-hero-portrait.webp 1x,
-            /assets/image-hero-portrait@2x.webp 2x,
-          "
-        />
-        <source
-          type="image/png"
-          media="(orientation: landscape)"
-          srcset="
-            /assets/image-hero-landscape.png 1x,
-            /assets/image-hero-landscape@2x.png 2x,
-          "
-        />
-        <source
-          type="image/png"
-          media="(orientation: portrait)"
-          srcset="
-            /assets/image-hero-portrait.png 1x,
-            /assets/image-hero-portrait@2x.png 2x,
-          "
-        />
-        <img src="assets/image-hero-landscape.png" alt="">
-      </picture>
 
       <div class="hero-metrics">
         <div class="metric">
