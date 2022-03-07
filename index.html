@@ -32,7 +32,41 @@
         <button class="btn btn-primary">Request Beta Access</button>
       </div>
 
-      <picture></picture>
+      <picture>
+        <source
+          type="image/webp"
+          media="(orientation: landscape)"
+          srcset="
+            /assets/image-hero-landscape.webp 1x,
+            /assets/image-hero-landscape@2x.webp 2x,
+          "
+        />
+        <source
+          type="image/webp"
+          media="(orientation: portrait)"
+          srcset="
+            /assets/image-hero-portrait.webp 1x,
+            /assets/image-hero-portrait@2x.webp 2x,
+          "
+        />
+        <source
+          type="image/png"
+          media="(orientation: landscape)"
+          srcset="
+            /assets/image-hero-landscape.png 1x,
+            /assets/image-hero-landscape@2x.png 2x,
+          "
+        />
+        <source
+          type="image/png"
+          media="(orientation: portrait)"
+          srcset="
+            /assets/image-hero-portrait.png 1x,
+            /assets/image-hero-portrait@2x.png 2x,
+          "
+        />
+        <img src="assets/image-hero-landscape.png" alt="">
+      </picture>
 
       <div class="hero-metrics">
         <div class="metric">
