@@ -104,6 +104,13 @@ footer {
 }
 
 /* HEADER SECTION */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  margin-bottom: 16px;
+}
 
 /* MEDIA QUERIES */
 /* Tablet */
