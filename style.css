@@ -67,7 +67,6 @@ footer {
 }
 
 .btn {
-  padding: 15px 31px;
   outline: none;
   border-radius: 6px;
   cursor: pointer;
@@ -80,11 +79,17 @@ footer {
   background: var(--dark-blue);
 }
 
+.btn-primary {
+  padding: 16px 32px;
+}
+
 .btn-primary:hover {
   background: linear-gradient(to right bottom, #a060ff, #cb30e3, #ffa84e);
 }
 
 .btn-secondary {
+  font-size: 1.6rem;
+  padding: 12px 24px;
   color: var(--dark-blue);
   border: 1px solid var(--dark-blue);
   background: transparent;
