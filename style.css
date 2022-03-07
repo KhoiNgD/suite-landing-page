@@ -369,6 +369,15 @@ footer {
     padding-right: 16px;
   }
 
+  picture {
+    flex: 1;
+  }
+
+  picture img {
+    display: block;
+    width: 100%;
+  }
+
   /* HEADER SECTION */
   .hero {
     gap: 56px;
@@ -395,6 +404,7 @@ footer {
 
   .hero-image {
     margin: revert;
+    width: 100%;
   }
 
   .hero-metrics {
@@ -406,6 +416,16 @@ footer {
   .feedback-wrapper {
     margin-top: 240px;
     padding: revert;
+  }
+
+  .feedback-pattern__wrapper--blur {
+    top: -50%;
+    left: -55%;
+    transform: scale(0.4);
+  }
+
+  .feedback-pattern__wrapper--curve {
+    top: 29%;
   }
 
   .feedback-content {
