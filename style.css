@@ -240,6 +240,27 @@ footer {
   color: var(--cream);
 }
 
+/* FOOTER SECTION */
+.footer-wrapper {
+  background-color: var(--cream);
+  padding-top: 95px;
+  padding-bottom: 72px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logos {
+  display: flex;
+  gap: 28px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
 /* MEDIA QUERIES */
 /* Tablet */
 @media (max-width: 1100px) {
