@@ -25,11 +25,19 @@ html {
 }
 
 body {
+  --max-width: 1110px;
   font-family: "Epilogue", sans-serif;
   line-height: 32px;
   font-size: 1.8rem;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
+}
+
+header,
+section,
+footer {
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 blockquote {
@@ -94,6 +102,8 @@ footer {
   border: 1px solid var(--dark-blue);
   background: transparent;
 }
+
+/* HEADER SECTION */
 
 /* MEDIA QUERIES */
 /* Tablet */
